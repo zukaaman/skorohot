@@ -1,0 +1,74 @@
+.about {
+  padding-bottom: 70px;
+
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+
+    color: #232222;
+    font-family: $font-500;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 23.67px;
+    text-transform: uppercase;
+  }
+
+  .container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about__pizzamaker-1,
+.about__pizzamaker-2 {
+  flex-basis: 24%;
+
+  img {
+    width: 287px;
+
+    border-radius: 50%;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+
+    color: #ff5000;
+    font-family: $font-500;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24.02px;
+  }
+}
+
+.about__text {
+  flex-basis: 52%;
+  padding: 0 25px;
+
+  p {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+
+    color: #232222;
+    font-family: $font-400;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  p:nth-of-type(1) {
+    padding-top: 0;
+  }
+
+  p:nth-of-type(3) {
+    font-family: $font-500;
+    font-size: 24px;
+    font-weight: 400;
+  }
+}

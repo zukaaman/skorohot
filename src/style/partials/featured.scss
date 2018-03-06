@@ -1,0 +1,38 @@
+.featured {
+  height: 160px;
+
+  background-color: #db4603;
+}
+
+.featured__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+
+  li {
+    width: 295px;
+    height: 120px;
+
+    background-image: url("../img/featured-back.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+
+    color: #ffffff;
+    font-family: $font-500;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .fetured-3 {
+    font-size: 70px;
+    line-height: 11.52px;
+  }
+}
