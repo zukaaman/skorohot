@@ -1,0 +1,138 @@
+.top-nav {
+  background-color: #232222;
+}
+
+.top-nav__list {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+
+  p {
+    margin: 0;
+    padding: 0;
+
+    color: #ffffff;
+    font-family: $font-300;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19.2px;
+    text-transform: uppercase;
+  }
+
+  .tel {
+    font-family: $font-500;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 19.2px;
+  }
+
+  .work-time {
+    padding-top: 10px;
+
+    opacity: 0.5;
+    font-family: $font-500;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12.15px;
+    text-transform: uppercase;
+  }
+
+  .cabinet {
+    padding: 0 15px;
+
+    color: #3bd42e;
+    font-family: $font-lato-700;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 43px;
+    text-transform: uppercase;
+    letter-spacing: 0.78px;
+
+    border-radius: 23px;
+    border: 2px solid #3bd42e;
+  }
+}
+
+.bottom-nav {
+  background-color: #ff5000;
+}
+
+.bottom-nav__list {
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+
+  list-style: none;
+
+  li {
+    flex-grow: 1;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+
+    border-left: 1px solid #db4603;
+  }
+
+  li:last-child {
+    background-color: #2eb423;
+
+    border: none;
+
+    p {
+      display: flex;
+      align-items: center;
+
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 12.86px;
+
+      &:before {
+        content: "";
+
+        display: block;
+        width: 33px;
+        height: 28px;
+        margin-right: 10px;
+
+        background-image: url("../img/basket.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+      }
+
+      &:after {
+        content: "";
+
+        display: block;
+        width: 23px;
+        height: 23px;
+        margin-left: 20px;
+
+        background-image: url("../img/basket-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain;
+      }
+    }
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+
+    color: #ffffff;
+    font-family: $font-500;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 19.2px;
+    text-transform: uppercase;
+  }
+}
