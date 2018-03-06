@@ -1,0 +1,23 @@
+.address {
+  height: 488px;
+
+  background-color: #232222;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.coordinates {
+
+  h3 {
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
