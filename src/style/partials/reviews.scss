@@ -1,0 +1,140 @@
+.reviews {
+  padding-bottom: 50px;
+
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+
+    color: #232222;
+    font-family: $font-500;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 23.67px;
+    text-transform: uppercase;
+  }
+}
+
+.reviews-slider {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reviews-slider__item {
+  position: relative;
+
+  width: 396px;
+  height: 280px;
+
+  text-align: left;
+
+  border: 3px solid #f6f7f7;
+  background-color: #ffffff;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  .stars-list {
+    position: absolute;
+    top: 31px;
+    left: 48px;
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    list-style: none;
+
+    li {
+      margin-right: 5px;
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .date {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+
+    color: #626262;
+    font-family: $font-300;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19.63px;
+  }
+
+  .text {
+    padding: 90px 50px 0 50px;
+    height: 125px;
+
+    color: #232222;
+    font-family: $font-400;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+    overflow: hidden;
+  }
+
+  .author {
+    position: absolute;
+    bottom: 20px;
+    right: 5px;
+
+    color: #ff5000;
+    font-family: $font-400;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19.63px;
+    text-decoration: underline;
+  }
+}
+
+.reviews-slider__button-left {
+  position: absolute;
+  top: 150px;
+  left: -58px;
+
+  width: 18px;
+  height: 33px;
+
+  background-image: url("../img/slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.reviews-slider__button-right {
+  position: absolute;
+  top: 150px;
+  right: -58px;
+
+  width: 18px;
+  height: 33px;
+
+  background-image: url("../img/slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  transform: rotate(180deg);
+}
+
+.reviews__button {
+  padding: 14px 24px;
+  border-radius: 23px;
+  border: 2px solid #ff5000;
+
+  color: #ff5000;
+  font-family: $font-lato-700;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 12.05px;
+  text-transform: uppercase;
+  letter-spacing: 0.78px;
+}

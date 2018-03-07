@@ -9,5 +9,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   //= partials/top-slider.js
 
+  //= partials/specials-slider.js
+
+  //= partials/reviews-slider.js
+
   //= partials/map.js
 });

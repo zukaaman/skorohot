@@ -89,7 +89,7 @@
     position: absolute;
     bottom: -190px;
     z-index: 10;
-    right: 57px;
+    right: 40px;
 
     display: flex;
     padding: 12px 20px;
@@ -183,9 +183,40 @@
   .slick-dots {
     position: absolute;
     top: 335px;
-    left: 125px;
+    left: 0;
 
+    width: 100%;
+    padding-left: 0;
     display: flex;
+    justify-content: center;
+
+    list-style: none;
+
+    li {
+      margin-right: 15px;
+      width: 17px;
+      height: 17px;
+
+      border-radius: 50%;
+
+      background-color: #ffffff;
+      opacity: 0.3;
+
+      cursor: pointer;
+
+      button {
+        display: none;
+      }
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+
+    .slick-active {
+      background-color: #3cd52e;
+      opacity: 1;
+    }
   }
 }
 
