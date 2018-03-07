@@ -95,7 +95,7 @@
       font-weight: 500;
       line-height: 12.86px;
 
-      &:before {
+      &::before {
         content: "";
 
         display: block;
@@ -108,7 +108,7 @@
         background-position: 0 0;
       }
 
-      &:after {
+      &::after {
         content: "";
 
         display: block;
