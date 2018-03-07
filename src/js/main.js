@@ -13,5 +13,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   //= partials/reviews-slider.js
 
+  //= partials/social-media-slider.js
+
+  //= partials/social-media-vk.js
+
+  //= partials/social-media-ok.js
+
   //= partials/map.js
 });
