@@ -1,35 +1,37 @@
-.pizza {
+.with-this {
+  padding-bottom: 90px;
+
   text-align: center;
 
   h2 {
     margin: 0;
     padding: 0;
-    padding-top: 50px;
+    padding-top: 70px;
 
     color: #232222;
     font-family: $font-500;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 500;
-    line-height: 36px;
+    line-height: 23.67px;
     text-transform: uppercase;
   }
 }
 
-.pizza-slider {
-  padding-top: 20px;
+.with-this-slider {
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.pizza-slider__item {
+.with-this-slider__item {
   background-color: #ffffff;
 }
 
-.pizza-slider__item-text {
+.with-this-slider__item-text {
   width: 272px;
 
   text-align: left;
 
-  .pizza-name {
+  .with-this-name {
     margin: 0;
     padding: 0;
     padding-top: 20px;
@@ -56,7 +58,7 @@
     }
   }
 
-  .pizza-diameter {
+  .with-this-diameter {
     margin: 0;
     padding: 0;
     margin-top: 10px;
@@ -206,7 +208,7 @@
   }
 }
 
-.pizza-slider__button-left {
+.with-this-slider__button-left {
   position: absolute;
   top: 115px;
   left: -58px;
@@ -219,7 +221,7 @@
   background-position: 0 0;
 }
 
-.pizza-slider__button-right {
+.with-this-slider__button-right {
   position: absolute;
   top: 115px;
   right: -58px;

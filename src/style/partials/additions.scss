@@ -1,0 +1,180 @@
+.additions {
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  text-align: center;
+
+  .btn-controls {
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    label {
+      padding: 30px 0;
+
+      color: #232222;
+      font-family: $font-500;
+      font-size: 28px;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      cursor: pointer;
+    }
+  }
+
+  .additions-sliders {
+    visibility: hidden;
+    height: 0;
+
+
+    color: #232222;
+    font-family: $font-400;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  #btn-4:checked ~ .drinks-slider,
+  #btn-5:checked ~ .deserts-slider,
+  #btn-6:checked ~ .sushi-slider {
+    height: auto;
+    visibility: visible;
+  }
+
+  #btn-4:checked ~ .btn-controls label[for="btn-4"],
+  #btn-5:checked ~ .btn-controls label[for="btn-5"],
+  #btn-6:checked ~ .btn-controls label[for="btn-6"] {
+    color: #ff5000;
+
+    border-top: 4px solid #ed4b02;
+  }
+}
+
+.drinks-slider__item,
+.deserts-slider__item,
+.sushi-slider__item {
+  width: 271px;
+}
+
+.drinks-slider__item-img,
+.deserts-slider__item-img,
+.sushi-slider__item-img {
+  img {
+    width: 188px;
+    height: 188px;
+    object-fit: content;
+  }
+}
+
+.drinks-slider__item-text,
+.deserts-slider__item-text,
+.sushi-slider__item-text {
+  width: 271px;
+
+  text-align: left;
+
+  .drinks-name,
+  .deserts-name,
+  .sushi-name {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    color: #ed4b02;
+    font-family: $font-500;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 23.47px;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .volume {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+
+    color: #232222;
+    font-family: $font-500;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.47px;
+  }
+
+  .price {
+    margin: 0;
+    padding: 0;
+
+    color: #232222;
+    font-family: $font-500;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 23.47px;
+  }
+
+  .add-button {
+    padding: 8px 12px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    color: #bbbbbb;
+    font-family: $font-400;
+    font-size: 14px;
+    font-weight: 400;
+
+    border-radius: 18px;
+    border: 2px solid #e3e3e3;
+    background-color: #ffffff;
+
+    &::before {
+      content: "+";
+
+      display: block;
+      width: 18px;
+      height: 18px;
+
+      font-size: 25px;
+      line-height: 14px;
+    }
+  }
+}
+
+.drinks-slider__button-left,
+.deserts-slider__button-left,
+.sushi-slider__button-left {
+  position: absolute;
+  top: 75px;
+  left: -58px;
+
+  width: 18px;
+  height: 33px;
+
+  background-image: url("../img/slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.drinks-slider__button-right,
+.deserts-slider__button-right,
+.sushi-slider__button-right {
+  position: absolute;
+  top: 75px;
+  right: -58px;
+
+  width: 18px;
+  height: 33px;
+
+  background-image: url("../img/slider-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  transform: rotate(180deg);
+}
