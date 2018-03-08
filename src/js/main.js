@@ -7,7 +7,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   //= ../../node_modules/slick-carousel/slick/slick.js
 
+  //= partials/top-menu.js
+
   //= partials/top-slider.js
+
+  //= partials/pizza-slider.js
+
+  //= partials/japan-food-slider.js
 
   //= partials/specials-slider.js
 

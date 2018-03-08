@@ -1,38 +1,40 @@
-.pizza {
+.japan-food {
   text-align: center;
 
   h2 {
     margin: 0;
     padding: 0;
     padding-top: 50px;
+    padding-bottom: 30px;
 
     color: #232222;
     font-family: $font-500;
     font-size: 36px;
     font-weight: 500;
-    line-height: 36px;
+    line-height: 23.67px;
     text-transform: uppercase;
   }
 }
 
-.pizza-slider {
-  padding-top: 20px;
-  padding-bottom: 40px;
+.japan-food-slider {
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 
-.pizza-slider__item {
-  background-color: #ffffff;
+.japan-food-slider__item {
+  width: 273px;
 }
 
-.pizza-slider__item-text {
-  width: 272px;
+.japan-food-slider__item-text {
+  width: 273px;
 
   text-align: left;
 
-  .pizza-name {
+  .japan-food-name {
     margin: 0;
     padding: 0;
     padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
 
@@ -46,73 +48,13 @@
       content: "";
 
       display: block;
-      width: 19px;
-      height: 16px;
+      width: 34px;
+      height: 20px;
 
-      background-image: url("../img/pizza-heart.svg");
+      background-image: url("../img/japan-food-heart.svg");
       background-repeat: no-repeat;
       background-position: 0 0;
-      background-size: cover;
-    }
-  }
-
-  .pizza-diameter {
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-    margin-bottom: 18px;
-    display: flex;
-
-    list-style: none;
-    text-align: center;
-
-    border-radius: 3px;
-    border: 1px solid #cccccc;
-
-    li {
-      flex-grow: 1;
-    }
-
-    label {
-      position: relative;
-      z-index: 10;
-
-      color: #232222;
-      font-family: $font-500;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 27px;
-      /* Text style for "Ø," */
-      // color: #000000;
-      // font-family: "Myriad Pro";
-      // font-weight: 400;
-      // line-height: 16.88px;
-
-      // &::before {
-      //   content: "";
-
-      //   position: absolute;
-      //   top: 0;
-      //   left: 0;
-
-      //   width: 91px;
-      //   height: 27px;
-      //   border-radius: 3px;
-      //   background-color: #ff5000;
-      // }
-    }
-
-    input[type="radio"]:checked ~ label::before {
-      content: "";
-
-      position: absolute;
-      top: -3px;
-      left: -19px;
-
-      width: 91px;
-      height: 27px;
-      border-radius: 3px;
-      background-color: #ff5000;
+      background-size: contain;
     }
   }
 
@@ -190,34 +132,9 @@
     font-weight: 400;
     text-align: left;
   }
-
-  .ingredient {
-    padding: 8px 12px;
-    display: flex;
-
-    color: #bbbbbb;
-    font-family: $font-400;
-    font-size: 14px;
-    font-weight: 400;
-
-    border-radius: 18px;
-    border: 2px solid #e3e3e3;
-    background-color: #ffffff;
-
-    &::before {
-      content: "+";
-
-      display: block;
-      width: 18px;
-      height: 18px;
-
-      font-size: 25px;
-      line-height: 14px;
-    }
-  }
 }
 
-.pizza-slider__button-left {
+.japan-food-slider__button-left {
   position: absolute;
   top: 115px;
   left: -58px;
@@ -230,7 +147,7 @@
   background-position: 0 0;
 }
 
-.pizza-slider__button-right {
+.japan-food-slider__button-right {
   position: absolute;
   top: 115px;
   right: -58px;
