@@ -74,6 +74,10 @@
       height: 40px;
 
       transition: all 0.3s;
+
+      p {
+        font-size: 15px;
+      }
     }
   }
 }
@@ -137,6 +141,8 @@
         background-size: contain;
       }
     }
+
+
   }
 
   p {
@@ -149,5 +155,14 @@
     font-weight: 500;
     line-height: 19.2px;
     text-transform: uppercase;
+  }
+
+  .bottom-nav__tel {
+    flex-direction: column;
+
+
+    .work-time {
+      font-size: 10px;
+    }
   }
 }

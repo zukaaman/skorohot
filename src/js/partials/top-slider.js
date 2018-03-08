@@ -4,6 +4,8 @@ $(document).ready(function(){
     arrows: false,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 6000
+    autoplaySpeed: 6000,
+    speed: 500,
+    fade: true
   });
 });

@@ -82,24 +82,13 @@
       font-size: 16px;
       font-weight: 500;
       line-height: 27px;
-      /* Text style for "Ø," */
-      // color: #000000;
-      // font-family: "Myriad Pro";
-      // font-weight: 400;
-      // line-height: 16.88px;
 
-      // &::before {
-      //   content: "";
-
-      //   position: absolute;
-      //   top: 0;
-      //   left: 0;
-
-      //   width: 91px;
-      //   height: 27px;
-      //   border-radius: 3px;
-      //   background-color: #ff5000;
-      // }
+      span {
+        color: #000000;
+        font-family: $font-meriad-400;
+        font-weight: 400;
+        line-height: 16.88px;
+      }
     }
 
     input[type="radio"]:checked ~ label::before {

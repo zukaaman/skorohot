@@ -9,6 +9,10 @@
   }
 }
 
+.address-inner {
+  height: 544px;
+}
+
 .coordinates {
   flex-basis: 29%;
 
@@ -66,6 +70,22 @@
     font-weight: 500;
   }
 
+  .delivery-area {
+    padding: 15px 21px;
+    margin-top: 17px;
+
+    border-radius: 23px;
+    border: 2px solid #ff5000;
+
+    color: #ef4c02;
+    font-family: $font-lato-700;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 12.05px;
+    text-transform: uppercase;
+    letter-spacing: 0.78px;
+  }
+
   a {
     p {
       color: #85bb00;
@@ -91,6 +111,15 @@
     width: 490px;
     height: 233px;
   }
+}
+
+.address-inner-map {
+  width: 490px;
+  height: 544px;
+
+  background-image: url("../img/map-inner-img.jpg");
+  background-repeat: no-repeat;
+  background-position: 58% center;
 }
 
 .shipping-zones {
@@ -128,5 +157,77 @@
       font-weight: 400;
       text-decoration: underline;
     }
+  }
+}
+
+.feedback {
+  padding-top: 40px;
+  padding-left: 30px;
+  flex-basis: 29%;
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 70px;
+
+    color: #ffffff;
+    font-family: $font-500;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44px;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+
+    color: #ffffff;
+    font-family: $font-lato-700;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+
+  input {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 346px;
+
+    color: #ffffff;
+
+    background-color: transparent;
+
+    border: none;
+    border-bottom: 2px solid #e7e7e7;
+  }
+
+  textarea {
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    color: #ffffff;
+
+    background-color: transparent;
+
+    border: none;
+    border-bottom: 2px solid #e7e7e7;
+
+    resize: none;
+  }
+
+  .feedback__button {
+    padding: 15px 19px;
+
+    color: #ff5000;
+    font-family: $font-lato-700;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 12.05px;
+    text-transform: uppercase;
+    letter-spacing: 0.78px;
+
+    border-radius: 23px;
+    border: 2px solid #ff5000;
   }
 }

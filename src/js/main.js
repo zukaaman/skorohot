@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   //= partials/top-menu.js
 
+  //= partials/smooth-scrolling.js
+
   //= partials/top-slider.js
 
   //= partials/pizza-slider.js
