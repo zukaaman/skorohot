@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   //= partials/social-media-slider.js
 
+  //= partials/product-slider.js
+
   //= partials/with-this-slider.js
 
   //= partials/drinks-slider.js

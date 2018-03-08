@@ -1,0 +1,48 @@
+.breadcrumbs {
+  height: 30px;
+
+  background-color: #232222;
+  opacity: 0.8;
+}
+
+.breadcrumbs__list {
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+
+  li {
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      a {
+        &::after {
+          content: "";
+        }
+      }
+    }
+
+    a {
+      color: #ffffff;
+      font-family: $font-300;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16.36px;
+
+      &::after {
+        content: "/";
+
+        margin-left: 20px;
+
+        color: #666666;
+      }
+    }
+  }
+}
