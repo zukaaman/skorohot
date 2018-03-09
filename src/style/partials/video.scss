@@ -1,10 +1,13 @@
 .video {
+  padding-top: 60px;
+
   text-align: center;
 
   h2 {
     margin: 0;
     padding: 0;
-    padding-top: 60px;
+    padding-bottom: 60px;
+
 
     color: #232222;
     font-family: $font-500;
@@ -18,16 +21,16 @@
     display: flex;
     justify-content: center;
 
-    video {
-      width: 508px;
-      height: 320px;
-      padding-top: 50px;
-      padding-right: 15px;
-      padding-bottom: 50px;
+    iframe {
+      margin-right: 15px;
+
+      .ytp-large-play-button .ytp-button {
+        display: none;
+      }
     }
 
-    video:last-child {
-      padding-right: 0;
+    iframe:last-child {
+      margin-right: 0;
     }
   }
 }
