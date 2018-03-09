@@ -23,10 +23,59 @@
   list-style: none;
 
   li {
+    position: relative;
+
     display: flex;
     align-items: center;
-    height: 50px;
-    width: 730px;
+    width: 726px;
+    height: 47px;
+    margin-bottom: 10px;
+
+    border-radius: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .correct {
+    background-color: rgba(133, 187, 0, 0.05);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 12px;
+      left: 13px;
+
+      width: 24px;
+      height: 23px;
+
+      background-image: url("../img/history-mark.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+    }
+  }
+
+  .uncorrect {
+    background-color: rgba(183, 183, 183, 0.1);
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 12px;
+      left: 13px;
+
+      width: 24px;
+      height: 23px;
+
+      background-image: url("../img/history-cross.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+    }
   }
 }
 
@@ -45,6 +94,7 @@
 
 .date {
   margin-right: 20px;
+  margin-left: 66px;
 }
 
 .time {

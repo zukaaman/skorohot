@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>СкороХот - Заказ</title>
+    <link href="css/main.min.css" rel="stylesheet">
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?152"></script>
+  </head>
+  <body>
+
+    //= template/header-inner.html
+
+    <main>
+
+      //= template/breadcrumbs.html
+
+      <div class="container">
+        <form action="https://echo.htmlacademy.ru"></form>
+          <section class="method">
+            <h1>Заказ: 500 р</h1>
+            <h2>Выберите способ получения заказа</h2>
+
+            <ul class="delivery-list">
+
+              <li class="delivery-1">
+                <p>Доставка<br> как можно скорее</p>
+                <label>
+                  ваш адрес
+                  <input type="text" required>
+                </label>
+                <p>До <span>бесплатной доставки</span> не хватает <span>171 р</span></p>
+              </li>
+
+              <li class="delivery-2">
+                <p>Доставка<br> к определенному времени</p>
+                <label>
+                  ваш адрес
+                  <input type="text" required>
+                </label>
+                <div class="wrapper">
+                  <label>
+                    часы
+                    <input type="number" min="0" max="23" required>
+                  </label>
+                  <label>
+                    минуты
+                    <input type="number" min="0" max="59" required>
+                  </label>
+                </div>
+                <p>Доставим в пределах ±15 минут<br> от выбранного времени</p>
+              </li>
+
+              <li class="delivery-3">
+                <p>Самовывоз</p>
+                <div class="wrapper">
+                  <label>
+                    время
+                    <input type="time" required>
+                  </label>
+                  <label>
+                    день
+                    <input type="date" required>
+                  </label>
+                </div>
+                <p>Пока ожидаете, мы Вас угостим<br> вкусным кофе!!!</p>
+              </li>
+
+            </ul>
+
+          </section>
+
+          <section class="order"></section>
+
+          <section class="order-bottom"></section>
+        </form>
+      </div>
+
+      //= template/address-inner.html
+
+      //= template/social-media-inner.html
+
+    </main>
+
+    //= template/footer-inner.html
+
+    <script src="js/main.min.js"></script>
+
+  </body>
+</html>
