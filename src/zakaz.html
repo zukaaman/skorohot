@@ -15,7 +15,7 @@
       //= template/breadcrumbs.html
 
       <div class="container">
-        <form action="https://echo.htmlacademy.ru"></form>
+        <form action="https://echo.htmlacademy.ru">
           <section class="method">
             <h1>Заказ: 500 р</h1>
             <h2>Выберите способ получения заказа</h2>
@@ -26,7 +26,7 @@
                 <p>Доставка<br> как можно скорее</p>
                 <label>
                   ваш адрес
-                  <input type="text" required>
+                  <input type="text" name="address" required>
                 </label>
                 <p>До <span>бесплатной доставки</span> не хватает <span>171 р</span></p>
               </li>
@@ -35,16 +35,16 @@
                 <p>Доставка<br> к определенному времени</p>
                 <label>
                   ваш адрес
-                  <input type="text" required>
+                  <input type="text" name="address" required>
                 </label>
                 <div class="wrapper">
                   <label>
                     часы
-                    <input type="number" min="0" max="23" required>
+                    <input type="number" name="hours" min="0" max="23" required>
                   </label>
                   <label>
                     минуты
-                    <input type="number" min="0" max="59" required>
+                    <input type="number" name="minuts" min="0" max="59" required>
                   </label>
                 </div>
                 <p>Доставим в пределах ±15 минут<br> от выбранного времени</p>
@@ -55,11 +55,11 @@
                 <div class="wrapper">
                   <label>
                     время
-                    <input type="time" required>
+                    <input type="time" name="time" required>
                   </label>
                   <label>
                     день
-                    <input type="date" required>
+                    <input type="date" name="date" required>
                   </label>
                 </div>
                 <p>Пока ожидаете, мы Вас угостим<br> вкусным кофе!!!</p>
@@ -69,9 +69,110 @@
 
           </section>
 
-          <section class="order"></section>
+          <section class="order">
+            <h2>Выберите способ получения заказа</h2>
 
-          <section class="order-bottom"></section>
+            <div class="container">
+              <div class="order-1">
+                <p class="order-1__img">
+                  <img src="img/order-1-img.jpg" alt="#">
+                </p>
+                <div class="wrapper">
+                  <p class="order-1__name">Чили пепперс 35см, 700 гр</p>
+                  <p class="order-1__description">Моцарелла, перчики Холапеньо, маслины, пепперони </p>
+                </div>
+                <p class="order-1__price">500р</p>
+              </div>
+
+              <div class="order-1">
+                <p class="order-1__img">
+                  <img src="img/order-1-img.jpg" alt="#">
+                </p>
+                <div class="wrapper">
+                  <p class="order-1__name">Чили пепперс 35см, 700 гр</p>
+                  <p class="order-1__description">Моцарелла, перчики Холапеньо, маслины, пепперони </p>
+                </div>
+                <p class="order-1__price">500р</p>
+              </div>
+
+              <div class="order__total">
+                <p class="total__price">Стоимость 1000 р</p>
+                <p class="total__bonus">Оплата баллами 1000 р</p>
+                <p class="total__all">К оплате 1000 р</p>
+              </div>
+
+            </div>
+          </section>
+
+          <section class="order-bottom">
+            <h2 class="visually-hidden">Тип оплаты</h2>
+
+            <div class="container">
+
+              <div class="payment-method">
+                <h3>Тип оплаты</h3>
+                <div class="wrapper">
+                  <div class="wrapper-2">
+                    <input id="payment-method-cash" type="radio" name="payment-method" value="cash" checked required>
+                    <label for="payment-method-cash">Наличными</label>
+                  </div>
+                  <div class="wrapper-2">
+                    <input id="payment-method-card" type="radio" name="payment-method" value="card" required>
+                    <label for="payment-method-card">Картой</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="buyer-data">
+                <h3>Ваши данные</h3>
+
+                <label>
+                  Ваше имя
+                  <input type="text" name="name" required>
+                </label>
+
+                <label>
+                  Ваш номер телефона
+                  <input type="tel" name="tel" required>
+                </label>
+
+                <div class="wrapper">
+                  <button class="code-button" type="button">получить код</button>
+                  <label>
+                    Код из смс
+                    <input type="text" name="code">
+                  </label>
+                </div>
+
+                <a href="#">
+                  <p>Зачем это нужно?</p>
+                </a>
+
+              </div>
+
+              <div class="comment">
+                <h3>Комментарий</h3>
+
+                <div class="wrapper">
+                  <label>
+                    Комментарий к заказу
+                    <textarea name="comment" cols="30" rows="5"></textarea>
+                  </label>
+
+                  <label>
+                    Промокод
+                    <input type="text" name="code">
+                  </label>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="zakaz-button__wrapper">
+              <button class="zakaz-button" type="submit">оформить</button>
+            </div>
+
+          </section>
         </form>
       </div>
 

@@ -1,0 +1,136 @@
+.order-bottom {
+  padding-top: 50px;
+
+  .container {
+    display: flex;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 40px;
+
+    color: #232222;
+    font-family: $font-500;
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  label {
+    color: #232222;
+    font-family: $font-400;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  input,
+  textarea {
+    border: none;
+    border-bottom: 1px solid #b7b7b7;
+
+    resize: none
+  }
+}
+
+
+.payment-method,
+.buyer-data,
+.comment {
+  flex-basis: 33%;
+  margin-right: 50px;
+}
+
+.payment-method {
+
+  .wrapper-2 {
+    margin-bottom: 30px;
+  }
+}
+
+.buyer-data {
+
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    label {
+      margin-bottom: 0;
+      width: 165px;
+    }
+  }
+
+  .code-button {
+    padding: 11px 16px;
+
+    color: #ef4c02;
+    font-family: $font-lato-700;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 9.37px;
+    text-transform: uppercase;
+    letter-spacing: 0.86px;
+
+    border-radius: 18px;
+    border: 2px solid #ff5000;
+  }
+
+  a {
+    p {
+      color: #85bb00;
+      font-family: $font-400;
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: underline;
+    }
+  }
+}
+
+.comment {
+  margin-right: 0;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    label:last-child {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 86px;
+    margin-bottom: 27px;
+  }
+}
+
+.zakaz-button__wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.zakaz-button {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 16px 25px;
+
+  color: #ffffff;
+  font-family: $font-500;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-transform: uppercase;
+
+  border-radius: 25px;
+  background-color: #3cd52e;
+}
