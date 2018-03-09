@@ -33,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   //= partials/sushi-slider.js
 
+  //= partials/action-slider.js
+
   //= partials/method.js
 
   //= partials/social-media-vk.js

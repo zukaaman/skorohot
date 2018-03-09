@@ -25,6 +25,13 @@
 
   .order-1__img {
     margin-right: 100px;
+
+    img {
+      width: 139px;
+      height: 120px;
+
+      object-fit: contain;
+    }
   }
 
   .wrapper {

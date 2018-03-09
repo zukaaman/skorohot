@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>СкороХот - Корзина</title>
+    <link href="css/main.min.css" rel="stylesheet">
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?152"></script>
+  </head>
+  <body>
+
+    //= template/header-inner.html
+
+    <main>
+
+      //= template/breadcrumbs.html
+
+      <section class="basket-main">
+        <div class="container">
+          <h1>Корзина</h1>
+
+          <div class="wrapper">
+            <p class="price">500 р</p>
+            <p class="description">До <span>бесплатной доставки</span> не хватает <span>171 р</span></p>
+          </div>
+
+          <div class="bonus-scale">
+            <h3>Шкала подарков от шеф-повара</h3>
+            <p class="bonus-scale__text"><span>* Акции не суммируются</span>, в сумму на подарки входят только позиции из основного меню без дополнительных скидок и спецпредложений</p>
+
+            <div class="line-wrapper">
+              <div class="line"></div>
+
+              <div class="pointer  pointer-0">0 р</div>
+              <div class="pointer  pointer-1000">1000 р</div>
+              <div class="pointer  pointer-1500">1500 р</div>
+              <div class="pointer  pointer-2500">2500 р</div>
+              <div class="pointer  pointer-4000">4000 р</div>
+
+              <div class="bonus  bonus-1000">
+                <img src="img/1000.jpg" alt="#">
+                <p>один ролл</p>
+              </div>
+              <div class="bonus  bonus-1500">
+                <img src="img/1500.jpg" alt="#">
+                <p>два ролла</p>
+              </div>
+              <div class="bonus  bonus-2500">
+                <img src="img/2500.jpg" alt="#">
+                <p>350 гр. роллов</p>
+              </div>
+              <div class="bonus  bonus-4000">
+                <img src="img/4000.jpg" alt="#">
+                <p>800 гр. роллов</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="in-basket">
+
+            <div class="basket-product">
+              <p class="product__img">
+                <img src="img/product-img.jpg" alt="#">
+              </p>
+              <div class="wrapper-2">
+                <p class="product__name">Чили пепперс 35см, 700 гр</p>
+                <p class="product__description">Моцарелла, перчики Холапеньо, маслины, пепперони </p>
+
+                <div class="wrapper-inner">
+                  <button class="ingredient" type="button">Ингредиент</button>
+                  <input class="quantity" type="number" min="1" max="99" name="quantity" value="1" required>
+                </div>
+
+              </div>
+              <p class="product__price">500р</p>
+              <button class="product__close" type="button"></button>
+            </div>
+
+            <div class="basket-product">
+              <p class="product__img">
+                <img src="img/product-img.jpg" alt="#">
+              </p>
+              <div class="wrapper-2">
+                <p class="product__name">Чили пепперс 35см, 700 гр</p>
+                <p class="product__description">Моцарелла, перчики Холапеньо, маслины, пепперони </p>
+
+                <div class="wrapper-inner">
+                  <button class="ingredient" type="button">Ингредиент</button>
+                  <input class="quantity" type="number" min="1" max="99" name="quantity" value="1" required>
+                </div>
+
+              </div>
+              <p class="product__price">500р</p>
+              <button class="product__close" type="button"></button>
+            </div>
+
+          </div>
+
+          <div class="submit-wrapper">
+            <p>1000 р</p>
+            <a href="zakaz.html">
+              <p>оформить</p>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="recommendation">
+        <h2>Также рекомендуем</h2>
+        <h3>Акции</h3>
+
+        <div class="container">
+          <div class="action-slider">
+          <!-- action-slider-start -->
+          <div class="action-slider__item">
+            <div class="action-slider__item-img">
+              <img src="img/action-slider-img.jpg" width="271" height="218" alt="#">
+            </div>
+            <form class="action-slider__item-text" action="https://echo.htmlacademy.ru">
+              <p class="action-name">Пеперони</p>
+              <div class="wrapper">
+                <p class="old-price">600р</p>
+                <p class="price">500р</p>
+                <button class="action-button" type="button">Купить</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="action-slider__item">
+            <div class="action-slider__item-img">
+              <img src="img/action-slider-img.jpg" width="271" height="218" alt="#">
+            </div>
+            <form class="action-slider__item-text" action="https://echo.htmlacademy.ru">
+              <p class="action-name">Пеперони</p>
+              <div class="wrapper">
+                <p class="old-price">600р</p>
+                <p class="price">500р</p>
+                <button class="action-button" type="button">Купить</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="action-slider__item">
+            <div class="action-slider__item-img">
+              <img src="img/action-slider-img.jpg" width="271" height="218" alt="#">
+            </div>
+            <form class="action-slider__item-text" action="https://echo.htmlacademy.ru">
+              <p class="action-name">Пеперони</p>
+              <div class="wrapper">
+                <p class="old-price">600р</p>
+                <p class="price">500р</p>
+                <button class="action-button" type="button">Купить</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="action-slider__item">
+            <div class="action-slider__item-img">
+              <img src="img/action-slider-img.jpg" width="271" height="218" alt="#">
+            </div>
+            <form class="action-slider__item-text" action="https://echo.htmlacademy.ru">
+              <p class="action-name">Пеперони</p>
+              <div class="wrapper">
+                <p class="old-price">600р</p>
+                <p class="price">500р</p>
+                <button class="action-button" type="button">Купить</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="action-slider__item">
+            <div class="action-slider__item-img">
+              <img src="img/action-slider-img.jpg" width="271" height="218" alt="#">
+            </div>
+            <form class="action-slider__item-text" action="https://echo.htmlacademy.ru">
+              <p class="action-name">Пеперони</p>
+              <div class="wrapper">
+                <p class="old-price">600р</p>
+                <p class="price">500р</p>
+                <button class="action-button" type="button">Купить</button>
+              </div>
+            </form>
+          </div>
+          <!-- action-slider-end -->
+          </div>
+        </div>
+
+      </section>
+
+      //= template/address-inner.html
+
+      //= template/social-media-inner.html
+
+    </main>
+
+    //= template/footer-inner.html
+
+    <script src="js/main.min.js"></script>
+
+  </body>
+</html>
