@@ -42,4 +42,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   //= partials/social-media-ok.js
 
   //= partials/map.js
+
+  //= partials/phone-mask.js
 });
