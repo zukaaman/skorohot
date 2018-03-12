@@ -26,6 +26,10 @@
 
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
 
+    @include old-desktop {
+      width: 295px;
+    }
+
     &::before {
       content: "";
       position: absolute;
@@ -34,6 +38,10 @@
 
       border: 15.5px solid #2eb423;
       border-right: 15.5px solid #ff5000;
+
+      @include old-desktop {
+        left: 116.5px;
+      }
     }
   }
 

@@ -1,4 +1,3 @@
-$(document).ready(function(){
   ymaps.ready(init);
     var myMap,
         myPlacemark;
@@ -17,4 +16,3 @@ $(document).ready(function(){
 
       myMap.behaviors.disable('scrollZoom');
     }
-});

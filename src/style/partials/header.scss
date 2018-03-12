@@ -77,6 +77,10 @@
 
       p {
         font-size: 15px;
+
+        @include old-desktop {
+          font-size: 10px;
+        }
       }
     }
   }

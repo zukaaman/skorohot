@@ -1,3 +1,7 @@
+body {
+  color: #ffffff;
+}
+
 * {
   outline: none;
 }
@@ -42,4 +46,8 @@ input[type=radio].visually-hidden {
 .container {
   margin: 0 auto;
   max-width: 1240px;
+
+  @include old-desktop {
+    max-width: 1080px;
+  }
 }

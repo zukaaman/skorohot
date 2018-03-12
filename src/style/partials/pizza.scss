@@ -24,16 +24,81 @@
   background-color: #ffffff;
 }
 
+.pizza-slider__item-img {
+  position: relative;
+
+  margin-bottom: 20px;
+
+  img {
+    width: 271px;
+    height: 218px;
+
+    object-fit: contain;
+  }
+
+  .action-button-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 271px;
+    padding: 10px;
+
+    background-color: rgba(21, 15, 15, 0.75);
+
+    box-sizing: border-box;
+
+    select {
+      width: 100%;
+
+      color: #ffffff;
+      font-family: $font-400;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: left;
+
+      background-color: rgba(21, 15, 15, 0.75);
+
+      border-radius: 5px;
+      border: 1px solid #cccccc;
+
+      option {
+        color: #ffffff;
+        font-family: $font-400;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+      }
+    }
+  }
+}
+
 .pizza-slider__item-text {
   width: 272px;
 
   text-align: left;
 
+  .pizza-name-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 19px;
+      height: 16px;
+
+      object-fit: contain;
+    }
+  }
+
   .pizza-name {
     margin: 0;
     padding: 0;
-    padding-top: 20px;
+
     display: flex;
+    flex-basis: 90%;
     justify-content: space-between;
 
     color: #ed4b02;
@@ -41,19 +106,6 @@
     font-size: 24px;
     font-weight: 500;
     line-height: 23.47px;
-
-    &::after {
-      content: "";
-
-      display: block;
-      width: 19px;
-      height: 16px;
-
-      background-image: url("../img/heart.png");
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: cover;
-    }
   }
 
   .pizza-diameter {
@@ -62,6 +114,7 @@
     margin-top: 10px;
     margin-bottom: 18px;
     display: flex;
+    width: 270px;
 
     list-style: none;
     text-align: center;
@@ -77,11 +130,17 @@
       position: relative;
       z-index: 10;
 
+      padding: 3px 17px;
+
       color: #232222;
       font-family: $font-500;
       font-size: 16px;
       font-weight: 500;
       line-height: 27px;
+
+      background-color: #ffffff;
+
+      border-radius: 3px;
 
       span {
         color: #000000;
@@ -91,17 +150,14 @@
       }
     }
 
-    input[type="radio"]:checked ~ label::before {
-      content: "";
+    input:checked ~ label {
+      color: #ffffff;
 
-      position: absolute;
-      top: -3px;
-      left: -19px;
-
-      width: 91px;
-      height: 27px;
-      border-radius: 3px;
       background-color: #ff5000;
+
+      span {
+        color: #ffffff;
+      }
     }
   }
 
